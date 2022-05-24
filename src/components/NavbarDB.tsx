@@ -276,7 +276,7 @@ export default function NavbarDB() {
         </BootstrapDialog>
       </div>
 
-      <AppBar position="static" sx={{ backgroundColor: 'orange', display: 'inline-flex' }}>
+      <AppBar position="static" sx={{ backgroundColor: 'blue', display: 'inline-flex' }}>
         <Toolbar>
           <Typography
             variant="h4"
