@@ -14,7 +14,7 @@ import Templogin from "./component2/Templogin";
 import AdminDashboard from "./component2/AdminDashboard";
 import GameCard from "./components/Gamecard";
 const App: React.FC = () => {
-  localStorage.setItem('server','https://1677bb5f9f2642.lhrtunnel.link');
+  localStorage.setItem('server','https://b458fc93f5bcce.lhrtunnel.link');
   localStorage.setItem('score','0');
   return (
       <BrowserRouter>
