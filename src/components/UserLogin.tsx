@@ -80,7 +80,7 @@ function Login() {
                     <Typography component="h1" variant="h5">
                         Log In
                     </Typography>
-                    <p>Welcome to smart investment</p>
+                    <p>Welcome to GUESS-BALL</p>
                     <Box sx={{ mt: 3 }}>
                         <Grid container spacing={2}>
 
