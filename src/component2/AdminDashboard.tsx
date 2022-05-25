@@ -43,12 +43,24 @@ function Login(){
         setInputBox(databox());
     }
 
+    const enableItTrivia = (e:any) => {
+        localStorage.setItem("answergiven","false");
+        Axios.post(`${server_url}/changeTriviaStatus/true`).then(res=>console.log(res.data));
+    }
+
+    const disableItTrivia = (e:any) => {
+        Axios.post(`${server_url}/changeTriviaStatus/false`).then(res=>console.log(res.data));
+    }
+
     return (
         <div>
             <h1>Welcome To Cricket Admin Panel</h1>
             {/* <input type="text" onChange={(e)=> setInputData(e.target.value)} /> */}
             <button onClick={enableIt} type="button" className="adminbutton"> Enable </button>
             <button onClick={disableIt} type="button" className="adminbutton"> Disable </button>
+            <br></br>
+            <button onClick={enableItTrivia} type="button" className="adminbutton"> Enable Trivia </button>
+            <button onClick={disableItTrivia} type="button" className="adminbutton"> Disable Trivia</button>
             <br></br>
             {inputBox}
             {/* {databox()} */}
