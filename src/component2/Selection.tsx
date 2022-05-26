@@ -23,9 +23,9 @@ function Selection(){
                     <Leaderboard/>
             </div>
             <div style={{margin:25,marginBottom:75}}>
-                <button type="button" style={{fontSize:20,padding:20,margin:25,marginTop:40,width:"450px",backgroundColor:'orange',borderColor:'black',borderRadius:10,fontFamily:'Vazir'}} onClick={()=>{if(localStorage.getItem("optionSelected")!=="true"){setGame(<Selectiontemp/>)}}}> Score Game </button>
-                <button type="button" style={{fontSize:20,padding:20,margin:25,marginTop:40,width:"450px",backgroundColor:'yellowgreen',borderColor:'black',borderRadius:10,fontFamily:'Vazir'}} onClick={()=>{if(localStorage.getItem("optionSelected")!=="true"){setGame(<ImageselectionUser/>)}}}> Map Game </button>
-                <button type="button" style={{fontSize:20,padding:20,margin:25,marginTop:40,width:"450px",backgroundColor:'orchid',borderColor:'black',borderRadius:10,fontFamily:'Vazir'}} onClick={()=>{if(localStorage.getItem("optionSelected")!=="true"){setGame(<TriviaMain/>)}}}> Trivia Game </button>
+                <button type="button" style={{fontSize:20,padding:20,margin:25,marginTop:40,width:"450px",backgroundColor:'orange',borderColor:'black',borderRadius:10,fontFamily:'Vazir'}} onClick={()=>{if(localStorage.getItem("optionSelected")!=="true"){setGame(<Selectiontemp/>)}}}><b> Score Game </b> </button>
+                <button type="button" style={{fontSize:20,padding:20,margin:25,marginTop:40,width:"450px",backgroundColor:'yellowgreen',borderColor:'black',borderRadius:10,fontFamily:'Vazir'}} onClick={()=>{if(localStorage.getItem("optionSelected")!=="true"){setGame(<ImageselectionUser/>)}}}><b> Map Game </b> </button>
+                <button type="button" style={{fontSize:20,padding:20,margin:25,marginTop:40,width:"450px",backgroundColor:'orchid',borderColor:'black',borderRadius:10,fontFamily:'Vazir'}} onClick={()=>{if(localStorage.getItem("optionSelected")!=="true"){setGame(<TriviaMain/>)}}}><b> Trivia Game </b></button>
             </div>
             <div >
                 {score}

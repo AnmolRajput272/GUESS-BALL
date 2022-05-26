@@ -17,7 +17,7 @@ import TriviaMain from "./component2/TriviaMain";
 import MatchSelect from "./component2/MatchSelect";
 
 const App: React.FC = () => {
-  localStorage.setItem('server','https://3e901581155cbe.lhrtunnel.link');
+  localStorage.setItem('server','https://5e2d9b93d3a74b.lhrtunnel.link');
   localStorage.setItem('score','0');
   return (
       <BrowserRouter>

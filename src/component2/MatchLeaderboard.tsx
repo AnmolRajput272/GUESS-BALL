@@ -29,7 +29,7 @@ function MatchLeaderboard({match}:item){
     });
 
     return(
-        <table style={{border:"5px solid black",borderCollapse:'collapse',backgroundColor:'white'}}>
+        <table className="matchhead" style={{border:"2px solid black",borderCollapse:'collapse'}}>
             <tr>
                 <th className="matchselectstyle">Email</th>
                 <th className="matchselectstyle">Questions Attempted</th>

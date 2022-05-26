@@ -3,6 +3,7 @@ import Axios from 'axios';
 import MatchLeaderboard from "./MatchLeaderboard";
 import "./App1.css";
 import { Navigate, useNavigate } from "react-router-dom";
+import NavbarDB from "../components/NavbarDB";
 
 function MatchSelect(){
 
@@ -23,16 +24,20 @@ function MatchSelect(){
     })
 
     return(
+        <div>
+            <NavbarDB/>
+        
         <div className="centered">
             <div>
-                <h1 style={{color:'whiteSmoke'}}><u>Match-Wise User Stats</u></h1>
-                <select style={{padding:10,backgroundColor:'wheat',border:'none',fontSize:25,margin:25}}>
+                <h1 style={{color:'maroon'}}><u>Match-Wise Leaderboard</u></h1>
+                <select style={{padding:10,backgroundColor:'whiteSmoke',border:'2px solid black',fontSize:25,margin:50}}>
                     {options}
                 </select>
                 {leaderboard}
             </div>
             <div>
-                <button style={{marginTop:50,padding:20,fontSize:20,border:'1px solid black'}} onClick={()=>{navigate('/userdashboard')}}> {"< "} HomePage </button>
+                <button style={{marginTop:75,padding:20,fontSize:20,border:'2px solid black',borderRadius:'10px'}} onClick={()=>{navigate('/userdashboard')}}> {"< "} HomePage </button>
+            </div>
             </div>
         </div>
     );

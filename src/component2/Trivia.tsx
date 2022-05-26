@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Axios from 'axios';
 import "./App1.css";
+import logo from "../shot.png";
+import logo2 from "../bowl.png";
 
 function Trivia(){
 
@@ -40,12 +42,20 @@ function Trivia(){
 
 
     return(
-        <div>
-            <h1>{question}</h1> 
-            {options} <br/>
-            {selectedData} <br/>
-            {resultData} 
-            {resultDataDes}
+        <div style={{display:'flex',justifyContent:'space-around'}}>
+            <div>
+                <img src={logo2} width={400} height={400}></img>
+            </div>
+            <div>
+                <h1>{question}</h1> 
+                {options} <br/>
+                {selectedData} <br/>
+                {resultData} 
+                {resultDataDes}
+            </div>
+            <div>
+            <img src={logo} width={350} height={350}></img>
+            </div>
         </div>
     );
 }
