@@ -148,14 +148,14 @@ export default function NavbarDB() {
   const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
-  const Transition = React.forwardRef(function Transition(
-    props: TransitionProps & {
-      children: React.ReactElement<any, any>;
-    },
-    ref: React.Ref<unknown>,
-  ) {
-    return <Slide direction="up" ref={ref} {...props} />;
-  });
+  // const Transition = React.forwardRef(function Transition(
+  //   props: TransitionProps & {
+  //     children: React.ReactElement<any, any>;
+  //   },
+  //   ref: React.Ref<unknown>,
+  // ) {
+  //   return <Slide direction="up" ref={ref} {...props} />;
+  // });
 
   const [open, setOpen] = React.useState(false);
 
@@ -276,22 +276,22 @@ export default function NavbarDB() {
         </BootstrapDialog>
       </div>
 
-      <AppBar position="static" sx={{ backgroundColor: 'blue', display: 'inline-flex' }}>
+      <AppBar position="static" sx={{ backgroundColor: 'yellow', display: 'inline-flex' }}>
         <Toolbar>
           <Typography
-            variant="h4"
-            noWrap
-            component="div"
-            sx={{ display: { xs: 'none', sm: 'block', color: 'black' } }}
+            variant="h2"
+            // noWrap
+            // component="div"
+            sx={{ display: { xs: 'none', sm: 'block', color: 'darkblue' } }}
           >
             <strong>GUESS BALL</strong>
           </Typography>
           <Box sx={{ flexGrow: 4 }} />
 
           <Box sx={{ flexGrow: 1, display: 'contents' }}>
-            <AccountBalanceWalletOutlined fontSize='large' sx={{ color: 'black' }} />
+            <AccountBalanceWalletOutlined fontSize='large' sx={{ color: 'green' }} />
             <Typography
-              variant="h6"
+              variant="h4"
               noWrap
               component="div"
               sx={{ display: { xs: 'none', sm: 'block', color: 'black' } }}

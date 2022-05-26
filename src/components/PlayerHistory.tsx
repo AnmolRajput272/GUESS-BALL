@@ -61,9 +61,9 @@ export default function PlayerHistory() {
   return (
     <>
       <br />
-      <Card sx={{ width: 1000, height: 1000, margin: "auto", marginTop: 5 }}>
+      <Card sx={{ width: 1000, color: "skyblue", height: 1000, margin: "auto", marginTop: 5 }}>
         <CardContent>
-          <Typography variant='h4' sx={{ textAlign: 'center' }} >Player History
+          <Typography variant='h2' sx={{ textAlign: 'center' }} >Player History
           </Typography>
           {/* <ThemeProvider theme={theme}> */}
             <Table
@@ -74,7 +74,7 @@ export default function PlayerHistory() {
               <br/>
             </Table>
             <TableContainer>
-              <Table sx={{ minWidth: 650 }} aria-label="simple table">
+              <Table sx={{ minWidth: 700 }} aria-label="simple table">
                 <TableHead>
                   <TableRow>
                     <TableCell align="center"><b>Match Name</b></TableCell>

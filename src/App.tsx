@@ -7,7 +7,6 @@ import Login from "./components/UserLogin";
 import UserDashboard from "./components/UserDashboard";
 import PlayerHistory from "./components/PlayerHistory";
 import GeneralLeaderboard from "./components/GeneralLeaderboard";
-import UserProfile from "./components/UserProfile";
 import NavbarDB from "./components/NavbarDB";
 import Selection from "./component2/Selection";
 import Templogin from "./component2/Templogin";
@@ -29,7 +28,6 @@ const App: React.FC = () => {
             <Route path="/userdashboard" element={<UserDashboard/>} />
             <Route path="/playerhistory" element={<PlayerHistory/>} />
             <Route path="/generalleaderboard" element={<GeneralLeaderboard/>} />
-            <Route path="/userprofile" element={<UserProfile/>} />
             <Route path="/watchnplay" element={<Selection/>} />
             <Route path="/admindashboard" element={<AdminDashboard/>} />
             <Route path="/Trivia" element={<Trivia/>} />
