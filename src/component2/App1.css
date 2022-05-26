@@ -161,8 +161,9 @@ td{
 
 .normbutton{
   padding: 20px;
-  font-size: medium;
+  font-size: large;
   margin: 20px;
+  border-radius: 5px;
 }
 
 .matchselectstyle{
