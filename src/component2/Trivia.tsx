@@ -23,10 +23,12 @@ function Trivia(){
                 (event)=>{event.preventDefault(); 
                 setSelectedData(<p>Selected Data : {data1}</p>);
                 if(data1===data.answer){
+                    Axios.post(`${server_url}/increment/${localStorage.getItem('username')}`);
                     setResultData(<h2 style={{color:'yellowgreen'}}>Correct Answer</h2>);
                     setResultDataDes(<h3>{data.answerdescription}</h3>);
                 }
                 else{
+                    Axios.post(`${server_url}/decrement/${localStorage.getItem('username')}`);
                     setResultData(<h2 style={{color:'red'}}>Wrong Answer</h2>);
                     setResultDataDes(<p></p>);
                 }
