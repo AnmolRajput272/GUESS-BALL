@@ -15,6 +15,7 @@ import AdminDashboard from "./component2/AdminDashboard";
 import GameCard from "./components/Gamecard";
 import Trivia from "./component2/Trivia";
 import TriviaMain from "./component2/TriviaMain";
+import MatchSelect from "./component2/MatchSelect";
 
 const App: React.FC = () => {
   localStorage.setItem('server','https://3e901581155cbe.lhrtunnel.link');
@@ -34,6 +35,7 @@ const App: React.FC = () => {
             <Route path="/admindashboard" element={<AdminDashboard/>} />
             <Route path="/Trivia" element={<Trivia/>} />
             <Route path="/TriviaMain" element={<TriviaMain/>} />
+            <Route path="/MatchSelect" element={<MatchSelect/>} />
             {/* <Route path="/gamecard" element={<GameCard/>} /> */}
           </Routes>
         </div>

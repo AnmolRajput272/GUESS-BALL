@@ -145,6 +145,10 @@ export default function NavbarDB() {
     navigate('/playerhistory');
   }
 
+  const matchhistory = () => {
+    navigate('/MatchSelect');
+  }
+
   const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
@@ -185,6 +189,7 @@ export default function NavbarDB() {
     >
       <MenuItem></MenuItem>
       <MenuItem onClick={playerHistory}>Player History</MenuItem>
+      <MenuItem onClick={matchhistory}>Match Leaderboard</MenuItem>
       <MenuItem onClick={handleClickOpen}>User Profile</MenuItem>
       <MenuItem onClick={logOut}>Logout</MenuItem>
 
