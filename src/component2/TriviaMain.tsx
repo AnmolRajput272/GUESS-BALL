@@ -35,7 +35,7 @@ function TriviaMain(){
     }, []);
 
     return(
-    <div>
+    <div style={{padding:30}}>
         <br/>
         {data}
     </div>);

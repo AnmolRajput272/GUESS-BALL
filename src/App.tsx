@@ -17,7 +17,7 @@ import Trivia from "./component2/Trivia";
 import TriviaMain from "./component2/TriviaMain";
 
 const App: React.FC = () => {
-  localStorage.setItem('server','https://745128749402b2.lhrtunnel.link');
+  localStorage.setItem('server','https://3e901581155cbe.lhrtunnel.link');
   localStorage.setItem('score','0');
   return (
       <BrowserRouter>
