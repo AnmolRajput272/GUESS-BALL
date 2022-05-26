@@ -5,11 +5,11 @@ import "./App1.css";
 function Trivia(){
 
     const [selectedData,setSelectedData] = useState(<p></p>);
-    const [data,setData] = useState({"id": 0, "question": "","options": "","answer": "","answerdescription": ""});
+    const [data,setData] = useState({"id": 0, "question": "","options":"LOADING QUESTION","answer": "","answerdescription": ""});
     const [resultData,setResultData] = useState(<p></p>);
     const [resultDataDes,setResultDataDes] = useState(<p></p>);
-    const [btnDisableStatus,setBtnDisableStatus] = useState(false);
-
+    const [btnDisableStatus,setBtnDisableStatus] = useState(localStorage.getItem('answergiven')==="true");
+    
     let server_url = localStorage.getItem('server');
 
     useEffect(() => {
@@ -23,10 +23,12 @@ function Trivia(){
                 (event)=>{event.preventDefault(); 
                 setSelectedData(<p>Selected Data : {data1}</p>);
                 if(data1===data.answer){
+                    Axios.post(`${server_url}/increment/${localStorage.getItem('username')}`);
                     setResultData(<h2 style={{color:'yellowgreen'}}>Correct Answer</h2>);
                     setResultDataDes(<h3>{data.answerdescription}</h3>);
                 }
                 else{
+                    Axios.post(`${server_url}/decrement/${localStorage.getItem('username')}`);
                     setResultData(<h2 style={{color:'red'}}>Wrong Answer</h2>);
                     setResultDataDes(<p></p>);
                 }
