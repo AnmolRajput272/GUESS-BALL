@@ -5,11 +5,11 @@ import "./App1.css";
 function Trivia(){
 
     const [selectedData,setSelectedData] = useState(<p></p>);
-    const [data,setData] = useState({"id": 0, "question": "","options": "","answer": "","answerdescription": ""});
+    const [data,setData] = useState({"id": 0, "question": "","options":"LOADING QUESTION","answer": "","answerdescription": ""});
     const [resultData,setResultData] = useState(<p></p>);
     const [resultDataDes,setResultDataDes] = useState(<p></p>);
-    const [btnDisableStatus,setBtnDisableStatus] = useState(false);
-
+    const [btnDisableStatus,setBtnDisableStatus] = useState(localStorage.getItem('answergiven')==="true");
+    
     let server_url = localStorage.getItem('server');
 
     useEffect(() => {
