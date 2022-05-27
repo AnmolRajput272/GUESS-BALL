@@ -27,7 +27,7 @@ function GameLeaderboard(){
             return(
                 <tr>
                     <td style={{color:'maroon'}}>{data.username.split('@')[0]}</td>
-                    <td style={{color:'maroon'}}>{data.score}</td>
+                    <td className="centertablecontent" style={{color:'maroon'}}>{data.score}</td>
                 </tr>
             )
         }
@@ -35,8 +35,8 @@ function GameLeaderboard(){
         return (
             // <Leaderboardbar username={data.username} score={data.score} />
             <tr>
-                <td >{data.username.split('@')[0]}</td>
-                <td >{data.score}</td>
+                <td>{data.username.split('@')[0]}</td>
+                <td className="centertablecontent" >{data.score}</td>
             </tr>
         )
     })
@@ -44,7 +44,11 @@ function GameLeaderboard(){
     return(
         <div className="centered ltable" style={{textAlign:'start'}}>
             <h1><u>Leaderboard</u></h1>
-            <table>
+            <table className="leaderboardhead">
+                <tr>
+                    <td ><b>Username</b></td>
+                    <td ><b>Points</b></td>
+                </tr>
                 {arr}
             </table>
         </div>

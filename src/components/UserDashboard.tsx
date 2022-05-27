@@ -1,6 +1,5 @@
 import { Grid, Typography } from '@mui/material';
 import Navbar from './NavbarDB';
-import IndexCardDB from './IndexCardDB';
 import PortfolioCardDB from './PortfolioCardDB';
 import React, { useEffect, useState } from 'react'
 import { useCookies } from 'react-cookie';
@@ -22,16 +21,15 @@ export default function UserDashboard() {
     return (
         <>
             <Navbar />
-            <Grid container spacing={5} sx={{ backgroundColor: '#E9E7E7' }}>
+            <Grid container spacing={5} sx={{ backgroundColor: '#373640' }}>
                 <Grid item xs={1}>
                 </Grid>
                 <Grid item xs={7}>
-                    {/* <IndexCardDB /> */}
                     <br /><br />
                     <Grid container item spacing={-1}>
                         <GameCard/>
                     </Grid>
-                    <br /><br /><br /><br /><br />
+                    <br /><br /><br /><br />
                     <Grid container item spacing={-1}>
                         <Faq/>
                     </Grid>
@@ -42,6 +40,7 @@ export default function UserDashboard() {
                         <PortfolioCardDB />
                     </Grid>
                     <br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    
                     <Grid container item spacing={-1}>
                         <Leaderboard/>
                     </Grid>

@@ -11,6 +11,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Paper, Button } from '@mui/material';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import cric from './cric.jpg';
 
 const theme = createTheme({
     palette: {
@@ -18,6 +19,7 @@ const theme = createTheme({
             default: '#373640'
         }
     }
+    
 });
 
 function Login() {
@@ -56,14 +58,15 @@ function Login() {
     }
 
     return (
-        <ThemeProvider theme={theme}>
+        // <ThemeProvider theme={theme}> 
+         <div style={{ display:"flex",alignItems:"center",backgroundImage:`url(${cric})`,height: '100vh',backgroundRepeat:"no-repeat",backgroundSize:"cover"} }>
             <Container component="main" maxWidth="sm">
                 <CssBaseline />
                 <Paper
                     elevation={4}
                     sx={{
                         verticalAlign: 'center',
-                        marginTop: '200px',
+                        // marginTop: '200px',
                         display: 'flex',
                         flexDirection: 'column',
                         alignItems: 'center',
@@ -126,7 +129,8 @@ function Login() {
                     </Box>
                 </Paper>
             </Container>
-        </ThemeProvider>
+            </div>
+        // </ThemeProvider>
     );
 }
 export default Login;

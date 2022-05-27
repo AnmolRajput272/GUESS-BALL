@@ -18,7 +18,7 @@ function YoutubeEmbed({ embedId }:item){
     return(
         <div>
             <div className="video-responsive" style={{paddingTop:40}}>
-                <ReactPlayer width={1280} height={720} style={{ pointerEvents: 'none'}} playing={true} muted={sound} url='https://www.youtube.com/watch?v=K8GTzZR4PIE' ></ReactPlayer>
+                <ReactPlayer width={1280} height={720} style={{ pointerEvents: 'none'}} playing={true} muted={sound} url='https://www.youtube.com/watch?v=Mvs1JXYfd6Q' ></ReactPlayer>
                 {/* <iframe
                 width="853"
                 height="1000"

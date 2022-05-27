@@ -7,14 +7,17 @@ import Login from "./components/UserLogin";
 import UserDashboard from "./components/UserDashboard";
 import PlayerHistory from "./components/PlayerHistory";
 import GeneralLeaderboard from "./components/GeneralLeaderboard";
-import UserProfile from "./components/UserProfile";
 import NavbarDB from "./components/NavbarDB";
 import Selection from "./component2/Selection";
 import Templogin from "./component2/Templogin";
 import AdminDashboard from "./component2/AdminDashboard";
 import GameCard from "./components/Gamecard";
+import Trivia from "./component2/Trivia";
+import TriviaMain from "./component2/TriviaMain";
+import MatchSelect from "./component2/MatchSelect";
+
 const App: React.FC = () => {
-  localStorage.setItem('server','https://94b9b564d9bc83.lhrtunnel.link');
+  localStorage.setItem('server','https://5e2d9b93d3a74b.lhrtunnel.link');
   localStorage.setItem('score','0');
   return (
       <BrowserRouter>
@@ -26,9 +29,11 @@ const App: React.FC = () => {
             <Route path="/userdashboard" element={<UserDashboard/>} />
             <Route path="/playerhistory" element={<PlayerHistory/>} />
             <Route path="/generalleaderboard" element={<GeneralLeaderboard/>} />
-            <Route path="/userprofile" element={<UserProfile/>} />
             <Route path="/watchnplay" element={<Selection/>} />
             <Route path="/admindashboard" element={<AdminDashboard/>} />
+            <Route path="/Trivia" element={<Trivia/>} />
+            <Route path="/TriviaMain" element={<TriviaMain/>} />
+            <Route path="/MatchSelect" element={<MatchSelect/>} />
             {/* <Route path="/gamecard" element={<GameCard/>} /> */}
           </Routes>
         </div>

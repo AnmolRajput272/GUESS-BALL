@@ -4,6 +4,7 @@ import { Paper, Link, Grid, Button, CssBaseline, TextField, Box, Typography, Con
 import axios from 'axios';
 import { borderRadius } from '@mui/system';
 import { useNavigate } from 'react-router-dom';
+import cric from './cric.jpg';
 
 
 const theme = createTheme({
@@ -68,7 +69,8 @@ function SignUp() {
     }
 
     return (
-        <ThemeProvider theme={theme}>
+        // <ThemeProvider theme={theme}>
+        <div style={{ display:"flex",alignItems:"center",backgroundImage:`url(${cric})`,height: '100vh',backgroundRepeat:"no-repeat",backgroundSize:"cover"} }>
             <Container component="main" maxWidth="sm">
                 <CssBaseline />
                 <Paper
@@ -205,7 +207,8 @@ function SignUp() {
                 </Paper>
                 
             </Container>
-        </ThemeProvider >
+            </div>
+        //</ThemeProvider >
     );
 }
 

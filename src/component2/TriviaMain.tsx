@@ -5,30 +5,26 @@ import Trivia from "./Trivia";
 function TriviaMain(){
 
     let server_url = localStorage.getItem('server');
-    const [data,setData] = useState(<h1>Screen Will Be Visible While ADS</h1>);
+    const [data,setData] = useState(<div>
+            <h1 style={{color:'maroon'}}>Welcome To Trivia Game</h1>
+            <button type="button" className="normbutton">LOADING</button>
+        </div>);
 
-    var status = true;
+    let status = false;
 
     function getData(){
         Axios.get(`${server_url}/getTriviaStatus`).then(res=>{
             console.log(res);
             if(res.data){
-                // if(!status){
-                //     localStorage.setItem("answergiven","false");
-                // }
-                // if(localStorage.getItem("answergiven")==="true" && status){
-                //     setData(<h1>You Have Given The Answer</h1>);
-                // }
-                // else{
-                    setData(<Trivia/>);
+                if(!status){
                     status = true;
-                // }
+                    setData(<Trivia/>);
+                }
             }
             else{
-                // if(status){
-                    setData(<h1>Screen Will Be Visible While ADS</h1>);
-                    status = false;
-                // }
+                localStorage.setItem('answergiven',"false");
+                status = false;
+                setData(<h1>ADS Are Yet To Show UP</h1>);
             }
         });
     }
@@ -39,7 +35,8 @@ function TriviaMain(){
     }, []);
 
     return(
-    <div>
+    <div style={{padding:30}}>
+        <br/>
         {data}
     </div>);
 }

@@ -7,6 +7,11 @@
   pointer-events: none;
 }
 
+body{
+  background-color: lavender;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -143,13 +148,13 @@ td{
   padding-bottom: 50px;
 }
 
-.ltable table, .ltable th, .ltable td {
+/* .ltable table, .ltable th, .ltable td {
   border: 3px solid black;
   border-collapse: collapse;
 }
 .ltable th, .ltable td {
   background-color: #96D4D4;
-}
+} */
 
 
 .adminbutton{
@@ -161,7 +166,41 @@ td{
 
 .normbutton{
   padding: 20px;
-  font-size: medium;
+  font-size: large;
   margin: 20px;
+  border-radius: 5px;
 }
+
+.matchselectstyle{
+  border: 1px solid whitesmoke;
+  padding: 20px;
+  font-size: larger;
+}
+
+.matchhead tr , .leaderboardhead tr{
+  background-color: white;
+}
+
+.matchhead tr:nth-child(even){background-color: #f2f2f2}
+
+.matchhead th, .leaderboardhead th{
+  background-color: #96D4D4;
+  font-weight:bolder;
+}
+
+.leaderboardhead tr:nth-child(even){background-color: #f2f2f2}
+
+.leaderboardhead {
+  border: 2px solid black;
+  box-shadow: 4px 4px;
+}
+
+.matchhead{
+  box-shadow: 1px 1px;
+}
+
+.centertablecontent{
+  text-align: center;
+}
+
 /************************************************************************************************************************************************** */
