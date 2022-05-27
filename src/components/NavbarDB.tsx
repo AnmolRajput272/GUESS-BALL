@@ -287,14 +287,14 @@ export default function NavbarDB() {
             variant="h4"
             // noWrap
             // component="div"
-            sx={{ display: { xs: 'none', sm: 'block', color: 'darkblue' } }}
+            sx={{ display: { xs: 'none', sm: 'block', color: 'darkblue' ,marginLeft:'7%' } }}
           >
             <strong>GUESS BALL</strong>
           </Typography>
           <Box sx={{ flexGrow: 4 }} />
 
           <Box sx={{ flexGrow: 1, display: 'contents' }}>
-            <AccountBalanceWalletOutlined fontSize='large' sx={{ color: 'green' }} />
+            <AccountBalanceWalletOutlined fontSize='large' sx={{ color: 'green' , marginLeft:'32%'}} />
             <Typography
               variant="h4"
               noWrap
