@@ -253,6 +253,10 @@
   width:98%;
   background-image: url('https://resources.pulse.icc-cricket.com/ICC/teams/header/men/IND.png');
   justify-content: center;
+/* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .game-banner-watch{
