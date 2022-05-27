@@ -21,7 +21,7 @@ export default function UserDashboard() {
     return (
         <>
             <Navbar />
-            <Grid container spacing={5} sx={{ backgroundColor: '#373640' }}>
+            <Grid container spacing={5} sx={{ backgroundColor: '#E9E7E7' }}>
                 <Grid item xs={1}>
                 </Grid>
                 <Grid item xs={7}>
