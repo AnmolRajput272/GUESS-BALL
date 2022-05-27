@@ -14,7 +14,7 @@ function MatchLeaderboard({match}:item){
 
     useEffect(() => {
         Axios.get(`${server_url}/findByMatch/${match}`).then(res=>{setData(res.data)});
-    });
+    },[match]);
 
     const tableContent = data.map((data1,index)=>{
         return(

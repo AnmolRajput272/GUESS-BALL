@@ -10,6 +10,7 @@ function MatchSelect(){
     const [data,setData] = useState([""]);
     const [leaderboard,setLeaderboard] = useState(<div></div>);
     let server_url = localStorage.getItem('server');
+    const [check,setCheck] = useState("INDIA VS PAKISTAN");
 
     const navigate = useNavigate();
 
@@ -19,21 +20,24 @@ function MatchSelect(){
 
     const options = data.map((data1,index)=>{
         return(
-            <option onClick={()=>{setLeaderboard(<MatchLeaderboard match={data1}/>)}}>{data1}</option>
+            <option value={data1} >{data1}</option>
         );
     })
 
     return(
         <div>
             <NavbarDB/>
-        
+            
         <div className="centered">
             <div>
                 <h1 style={{color:'maroon'}}><u>Match-Wise Leaderboard</u></h1>
-                <select style={{padding:10,backgroundColor:'whiteSmoke',border:'2px solid black',fontSize:25,margin:50}}>
-                    {options}
-                </select>
+                <form>
+                    <select onChange={(event)=>{console.log(setLeaderboard(<MatchLeaderboard match={event.target.value}/>) )}} style={{padding:10,backgroundColor:'whiteSmoke',border:'2px solid black',fontSize:25,margin:50}}>
+                        {options}
+                    </select>
+                </form>
                 {leaderboard}
+                {/* {check} */}
             </div>
             <div>
                 <button style={{marginTop:75,padding:20,fontSize:20,border:'2px solid black',borderRadius:'10px'}} onClick={()=>{navigate('/userdashboard')}}> {"< "} HomePage </button>
