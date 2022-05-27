@@ -32,8 +32,8 @@ export default function PortfolioCardDB() {
     return (
         <>
         <TableContainer component={Paper} sx={{ marginTop: '40px', width: 'fit-content' }}>
-        <Typography variant='h5' sx={{ padding: '30px 15px' }}>
-                    <strong>Portfolio</strong>
+        <Typography variant='h5' sx={{ padding: '30px 30px' }}>
+                    <strong>User Stats</strong>
                         </Typography>
             <Table sx={{ minWidth: 500 }} >
                 <TableHead>

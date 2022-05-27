@@ -39,7 +39,7 @@ const faqs=[
 export default function Faq() {
   return (
       <>
-    <Typography variant='h5' color='white' sx={{ margin: '30px 0px' }}>
+    <Typography variant='h5' color='black' sx={{ margin: 'auto' }}>
     Frequently Asked Questions
   </Typography>
   <br/>
