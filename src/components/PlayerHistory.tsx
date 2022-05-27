@@ -61,7 +61,7 @@ export default function PlayerHistory() {
   return (
     <>
       <br />
-      <Card sx={{ width: 1000, color: "skyblue", height: 1000, margin: "auto", marginTop: 5 }}>
+      <Card sx={{ width: 1000, color: "black", height: 1000, margin: "auto", marginTop: 5 }}>
         <CardContent>
           <Typography variant='h2' sx={{ textAlign: 'center' }} >Player History
           </Typography>

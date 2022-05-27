@@ -3,8 +3,8 @@ import "./App1.css";
 import Axios from 'axios';
 import Youtubeplayer from "./Youtubeplayer";
 import Leaderboard from "./CurrentGameLeaderboard";
-import batsmen from "../stancebg2.png";
-import bowler from "../bowlerbg2.png";
+import batsmen from "../sachinbg1.png";
+import bowler from "../bowllbg1.png";
 
 function Selectiontemp(){
 
@@ -121,11 +121,11 @@ function Selectiontemp(){
         <div>
             {head}
             <br></br>
-            <div style={{display:'flex',justifyContent:'center'}}>
+            <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
                 <div>
-                    <img src={batsmen}></img>
+                    <img src={batsmen} height={350} width={300}></img>
                 </div>
-                <div>
+                <div >
                     <button type="button" id="btn" onClick={()=>{localStorage.setItem("scored","6");localStorage.setItem("optionSelected","true");change_("6");}} className={classname} disabled={buttonStatus}> 6 </button>
                     <button type="button" id="btn" onClick={()=>{localStorage.setItem("scored","5");localStorage.setItem("optionSelected","true");change_("5");}} className={classname} disabled={buttonStatus}> 5 </button>
                     <button type="button" id="btn" onClick={()=>{localStorage.setItem("scored","4");localStorage.setItem("optionSelected","true");change_("4");}} className={classname} disabled={buttonStatus}> 4 </button>
@@ -143,7 +143,7 @@ function Selectiontemp(){
                     <br></br>
                 </div>
                 <div>
-                    <img src={bowler}></img>
+                    <img src={bowler} height={350} width={300}></img>
                 </div>
             </div>
         </div>
