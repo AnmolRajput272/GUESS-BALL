@@ -23,7 +23,7 @@ function MatchLeaderboard({match}:item){
                 <td className="matchselectstyle">{data1.questionsattempted}</td>
                 <td className="matchselectstyle">{data1.correctanswers}</td>
                 <td className="matchselectstyle">{data1.pointsgained}</td>
-                <td className="matchselectstyle">{data1.accuracy}</td>
+                <td className="matchselectstyle">{data1.accuracy} %</td>
             </tr>
         )
     });

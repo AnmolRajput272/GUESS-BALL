@@ -76,7 +76,7 @@ export default function Leaderboard() {
                 {row.firstname + " " + row.lastname}
               </StyledTableCell>
               <StyledTableCell align="center">{row.coinbalance}</StyledTableCell>
-              <StyledTableCell align="center">{row.accuracy}</StyledTableCell>
+              <StyledTableCell align="center"> &nbsp; &nbsp; &nbsp; {row.accuracy} %</StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>

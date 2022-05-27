@@ -33,7 +33,7 @@ export default function UserDashboard() {
                     <br /><br />
                     <div className='game-banner'>
                         <div className='game-banner-watch'>
-                            <h2>IND vs PAK</h2>
+                            <h2>INDIA vs PAKISTAN</h2>
                             <p>Get Ready to witness a nail biting encounter between India and Pakistan...</p>
                             <Button  style={{fontSize:20,padding:10,margin:'auto',width:'50%', color:'black',backgroundColor:'#00e8fff0',borderColor:'black',borderRadius:10,fontFamily:'Vazir'}} onClick={watchnplay}>Watch-N-Play</Button>
                         </div>

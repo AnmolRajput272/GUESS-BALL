@@ -51,7 +51,7 @@ export default function PortfolioCardDB() {
                             <TableCell align='center' component="th" scope="row">
                             <b>Accuracy</b><br /><br/>
                                 <Typography variant='subtitle1' >
-                                {userprofile.accuracy}
+                                  {userprofile.accuracy} %
                             </Typography>
                             </TableCell>
                             <TableCell align='center'
@@ -61,7 +61,7 @@ export default function PortfolioCardDB() {
                                     fontWeight: "bold",
                                 }}
                             >
-                                Profit Earned<br /><br />
+                                Points Earned<br /><br />
                             <Typography  variant='subtitle1' sx={{ color: 'green'}} >
                                 {userprofile.coinbalance}
                             </Typography>
