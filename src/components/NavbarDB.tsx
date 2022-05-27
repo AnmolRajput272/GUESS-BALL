@@ -281,7 +281,7 @@ export default function NavbarDB() {
         </BootstrapDialog>
       </div>
 
-      <AppBar position="static" sx={{ backgroundColor: '#a2bac3d9', display: 'inline-flex' }}>
+      <AppBar position="static" sx={{ backgroundColor: '#a2bac3d9', display: 'inline-flex', height:'75px' }}>
         <Toolbar>
           <Typography
             variant="h4"
@@ -299,13 +299,13 @@ export default function NavbarDB() {
               variant="h4"
               noWrap
               component="div"
-              sx={{ display: { xs: 'none', sm: 'block', color: 'black' } }}
+              sx={{ display: { xs: 'none', sm: 'block', color: 'black' , margin:'15px'} }}
             >
               {userprofile.coinbalance}
             </Typography>
           </Box>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Box sx={{ display: { xs: 'none', md: 'flex', flexGrow: 1, marginLeft: '40px' } }}>
+          <Box sx={{ display: { xs: 'none', md: 'flex', flexGrow: 1, marginLeft: '40px'} }}>
             <IconButton
               size="large"
               edge="end"
@@ -316,7 +316,7 @@ export default function NavbarDB() {
               color="inherit"
             >
               <AccountCircle fontSize='large' sx={{ color: 'black' }} />
-              <p style={{ color: 'black' }}>{(userprofile.firstname + " " + userprofile.lastname)}</p>
+              <p style={{ color: 'black', margin:'15px' }}>{(userprofile.firstname + " " + userprofile.lastname)}</p>
             </IconButton>
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
