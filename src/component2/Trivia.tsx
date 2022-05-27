@@ -42,7 +42,7 @@ function Trivia(){
 
 
     return(
-        <div style={{display:'flex',justifyContent:'space-around'}}>
+        <div style={{display:'flex',justifyContent:'space-around',flexWrap:'wrap'}}>
             <div>
                 <img src={logo2} width={400} height={400}></img>
             </div>

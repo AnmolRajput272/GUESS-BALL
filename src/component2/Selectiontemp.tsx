@@ -121,7 +121,7 @@ function Selectiontemp(){
         <div>
             {head}
             <br></br>
-            <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+            <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexWrap:'wrap'}}>
                 <div>
                     <img src={batsmen} height={350} width={300}></img>
                 </div>
