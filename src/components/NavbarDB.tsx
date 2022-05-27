@@ -284,7 +284,7 @@ export default function NavbarDB() {
       <AppBar position="static" sx={{ backgroundColor: 'yellow', display: 'inline-flex' }}>
         <Toolbar>
           <Typography
-            variant="h2"
+            variant="h4"
             // noWrap
             // component="div"
             sx={{ display: { xs: 'none', sm: 'block', color: 'darkblue' } }}
