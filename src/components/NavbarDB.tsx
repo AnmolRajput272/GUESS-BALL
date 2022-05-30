@@ -140,6 +140,7 @@ export default function NavbarDB() {
   const logOut = () => {
     setCookie('jwt', '');
     navigate('/login');
+    localStorage.setItem('username','');
   }
   const playerHistory = () => {
     navigate('/playerhistory');
