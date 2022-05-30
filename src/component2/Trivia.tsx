@@ -31,7 +31,13 @@ function Trivia(){
                 }
                 else{
                     Axios.post(`${server_url}/decrement/${localStorage.getItem('username')}`);
-                    setResultData(<h2 style={{color:'red'}}>Wrong Answer</h2>);
+                    setResultData(
+                        <div>
+                            <h2 style={{color:'red'}}>Wrong Answer</h2>
+                            <h2 style={{color:'yellowgreen'}}>Correct Answer : {data.answer}</h2>
+                            <h3 style={{color:'white'}}>{data.answerdescription}</h3>
+                        </div>
+                    )
                     setResultDataDes(<p></p>);
                 }
                 setBtnDisableStatus(true);

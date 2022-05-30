@@ -24,7 +24,7 @@ function TriviaMain(){
             else{
                 localStorage.setItem('answergiven',"false");
                 status = false;
-                setData(<h1>ADS Are Yet To Show UP</h1>);
+                setData(<h1 style={{color:'white'}}>ADS Are Yet To Show UP</h1>);
             }
         });
     }
