@@ -43,7 +43,7 @@ function GameLeaderboard(){
 
     return(
         <div className="centered ltable" style={{textAlign:'start'}}>
-            <h1><u>Leaderboard</u></h1>
+            <h1 style={{color:'white'}}><u>Leaderboard</u></h1>
             <table className="leaderboardhead">
                 <tr>
                     <td ><b>Username</b></td>

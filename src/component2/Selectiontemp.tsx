@@ -31,7 +31,7 @@ function Selectiontemp(){
             if(res.data==="buttonstyle"){
                 setButtonStatus(false);
                 setHead(<div>
-                            <h1>Click The Next Ball Outcome</h1>
+                            <h1 style={{color:'white'}}>Click The Next Ball Outcome</h1>
                             <h2 className="user-msg">You will not be allowed to select, once the bowler start his run up</h2>
                         </div>);
                 setWaitForBall(<h1></h1>);
@@ -114,7 +114,7 @@ function Selectiontemp(){
     //   })
 
     function change_(e:string){
-        setBottomData(<h2 style={{color:'maroon'}}>The Selected Number is {e}</h2>);
+        setBottomData(<h2 style={{color:'white'}}>The Selected Number is {e}</h2>);
     }
 
     return(

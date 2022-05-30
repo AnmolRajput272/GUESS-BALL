@@ -6,7 +6,7 @@ function TriviaMain(){
 
     let server_url = localStorage.getItem('server');
     const [data,setData] = useState(<div>
-            <h1 style={{color:'maroon'}}>Welcome To Trivia Game</h1>
+            <h1 style={{color:'white'}}>Welcome To Trivia Game</h1>
             <button type="button" className="normbutton">LOADING</button>
         </div>);
 

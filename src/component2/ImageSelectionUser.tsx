@@ -3,7 +3,7 @@ import logo from '../fruits.jpg';
 import ground from '../ground.jpg';
 import './App1.css';
 import Axios from 'axios';
-import ballwait from '../ballwait1.png';
+import ballwait from '../ballwait1whiteblur.png';
 import Extra_Cover from "../Extra_Cover.jpg";
 import Long_On from "../Long_On.jpg";
 import Long_Off from "../Long_Off.jpg";
@@ -12,7 +12,7 @@ import Deep_Backward_Square_Leg from "../Deep_Backward_Square_Leg.jpg";
 import Fine_Leg from "../Fine_Leg.jpg";
 import third_Man from "../3rd_Man.jpg";
 import Backward_point from "../Backward_point.jpg";
-import Loading from "../Loading.png"
+import Loading from "../Loadingwhiteblur.png"
 
 function ImageselectionUser(){
 
@@ -45,7 +45,7 @@ function ImageselectionUser(){
                 }
                 BallUpdatedFlag = false;
                 setHead(<div>
-                            <h1>Click The Next Ball Outcome</h1>
+                            <h1 style={{color:'white'}}>Click The Next Ball Outcome</h1>
                             <h2 className='user-msg'>You will not be allowed to select, once the bowler start his run up</h2>
                         </div>);
                 setWaitForBall(<h1></h1>);
@@ -114,12 +114,12 @@ function ImageselectionUser(){
     }
 
     function change(e:string){
-        setFruitName(<h2 style={{color:'green'}}>This Region Is : {e}</h2>);
+        setFruitName(<h2 style={{color:'white'}}>This Region Is : {e}</h2>);
     }
 
     function changeselect(e:string){
         localStorage.setItem('sectionUser',e);
-        setSelection(<h1 style={{color:'maroon'}}>You Selected : {e}</h1>);
+        setSelection(<h1 style={{color:'white'}}>You Selected : {e}</h1>);
         localStorage.setItem("optionSelected","true");
     }
 

@@ -47,7 +47,7 @@ function Trivia(){
                 <img src={logo2} width={400} height={400}></img>
             </div>
             <div>
-                <h1>{question}</h1> 
+                <h1 style={{color:'white'}}>{question}</h1> 
                 {options} <br/>
                 {selectedData} <br/>
                 {resultData} 

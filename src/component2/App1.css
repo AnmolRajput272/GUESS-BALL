@@ -8,7 +8,12 @@
 }
 
 body{
-  background-color: lavender;
+  background: url(../ground2.jpeg);
+/* Center and scale the image nicely */
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 
@@ -144,8 +149,13 @@ td{
 }
 
 .temp{
-  background-color: rgb(223, 217, 217);
-  padding-bottom: 50px;
+  /* background-color: rgb(223, 217, 217); */
+  padding-bottom: 200px; 
+  background: url('../groundblur.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  height:100%
 }
 
 /* .ltable table, .ltable th, .ltable td {

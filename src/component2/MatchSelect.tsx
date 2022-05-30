@@ -27,10 +27,10 @@ function MatchSelect(){
     return(
         <div>
             <NavbarDB/>
-            
+
         <div className="centered">
             <div>
-                <h1 style={{color:'maroon'}}><u>Match-Wise Leaderboard</u></h1>
+                <h1 style={{color:'white'}}><u>Match-Wise Leaderboard</u></h1>
                 <form>
                     <select onChange={(event)=>{console.log(setLeaderboard(<MatchLeaderboard match={event.target.value}/>) )}} style={{padding:10,backgroundColor:'whiteSmoke',border:'2px solid black',fontSize:25,margin:50}}>
                         {options}
