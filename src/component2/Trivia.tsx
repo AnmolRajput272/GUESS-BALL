@@ -23,11 +23,11 @@ function Trivia(){
         return (
             <button type="button" disabled={btnDisableStatus} className="normbutton" onClick={
                 (event)=>{event.preventDefault(); 
-                setSelectedData(<p>Selected Data : {data1}</p>);
+                setSelectedData(<p style={{color:'white'}}>Selected Data : {data1}</p>);
                 if(data1===data.answer){
                     Axios.post(`${server_url}/increment/${localStorage.getItem('username')}`);
                     setResultData(<h2 style={{color:'yellowgreen'}}>Correct Answer</h2>);
-                    setResultDataDes(<h3>{data.answerdescription}</h3>);
+                    setResultDataDes(<h3 style={{color:'white'}}>{data.answerdescription}</h3>);
                 }
                 else{
                     Axios.post(`${server_url}/decrement/${localStorage.getItem('username')}`);

@@ -6,13 +6,19 @@ import Leaderboard from "./CurrentGameLeaderboard";
 import Selectiontemp from "./Selectiontemp";
 import ImageselectionUser from "./ImageSelectionUser";
 import TriviaMain from "./TriviaMain";
+import NavbarDB from "../components/NavbarDB";
+import { useNavigate } from 'react-router-dom';
 
 function Selection(){
 
     const [game,setGame] = useState(<Selectiontemp/>);
     const [score,SetScore] = useState(<p>Score Is {localStorage.getItem('score')}</p>);
+    const navigate = useNavigate();
 
     useEffect(()=>{
+        if(!(localStorage.getItem('username')?.length)){
+            navigate('/login');
+        }
         SetScore(<button type="button" style={{border:'2px solid black',padding:'20px 35px',fontSize:23,background:'maroon',color:'white',borderRadius:10,marginTop:20,marginBottom:60}}> <b>Your Score : {localStorage.getItem('score')}</b></button>);
     },[score]);
 
